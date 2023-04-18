@@ -2,7 +2,7 @@
 :root {
     /* color */
     --color-white: #ffffff;
-    --color-light-blue : #7b9cc4;
+    --color-light-blue: #7b9cc4;
     --color-blue: #003894;
     --color-dark-blue: #001d53;
     --color-light-white: #eeeeee;
@@ -23,11 +23,12 @@
 
     /* font weight */
     --weight-bold: 900;
-    --weight-semi-bold: 500;
+    --weight-semi-bold: 700;
     --weight-regular: 300;
+    --weight-semi-regular: 300;
 
     /* size */
-    --size-border-radius: 20px;
+    --size-border-radius: 40px;
 
 }
 
@@ -50,6 +51,13 @@ a {
 ul {
     list-style: none;
     padding-left: 0;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 /* Typography */
@@ -114,4 +122,28 @@ p {
 
 .navbar__menu__item:hover {
     background-color: var(--color-dark-blue);
+}
+
+/* Home */
+#home {
+    background: url(imgs/home.jpg) center/cover no-repeat;
+    padding: 40px;
+    text-align: center;
+}
+
+.home__avatar {
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    border: 2px solid var(--color-dark-blue)
+}
+
+.home__contact {
+    color: var(--color-blue);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-semi-bold);
+    margin: 24px;
+    padding: 10px 12px;
+    border: 2px solid var(--color-blue);
+    border-radius: var(--size-border-radius);
 }
