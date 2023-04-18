@@ -5,7 +5,7 @@
     --color-light-blue: #7b9cc4;
     --color-blue: #003894;
     --color-dark-blue: #001d53;
-    --color-light-white: #eeeeee;
+    --color-light-white: #f5f5f5;
     --color-dark-white: #bdbdbd;
     --color-beige: #faf9f5;
     --color-black: #171717;
@@ -29,6 +29,9 @@
 
     /* size */
     --size-border-radius: 40px;
+
+    /* Annimation */
+    --animation-duration: 300ms;
 
 }
 
@@ -77,16 +80,16 @@ h2 {
 
 h3 {
     font-size: var(--font-regular);
-    font-weight: var(--weight-regular);
+    font-weight: var(--weight-semi-bold);
     color: var(--color-black);
     margin: 8px 0;
 }
 
 p {
-    font-size: var(--font-regular);
+    font-size: var(--font-small);
     font-weight: var(--weight-regular);
     color: var(--color-black);
-    margin: 4px 0;
+    margin: 5px 0;
 }
 
 /* Navbar */
@@ -127,11 +130,12 @@ p {
 /* Home */
 #home {
     background: url(imgs/home.jpg) center/cover no-repeat;
-    padding: 40px;
+    padding: 50px;
     text-align: center;
 }
 
 .home__avatar {
+    margin-top: 30px;
     width: 300px;
     height: 400px;
     border-radius: 50%;
@@ -139,11 +143,67 @@ p {
 }
 
 .home__contact {
-    color: var(--color-blue);
+    color: var(--color-light-blue);
     font-size: var(--font-regular);
     font-weight: var(--weight-semi-bold);
     margin: 24px;
     padding: 10px 12px;
-    border: 2px solid var(--color-blue);
+    border: 2px solid var(--color-light-blue);
     border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+    padding: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* About */
+#About {
+    background-color: var(--color-light-white);
+}
+
+.about__stat {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.stat_title {
+    color: var(--color-blue);
+    font-size: 130%;
+}
+
+.stat__icon i {
+    transition: all var(--animation-duration) ease;
+}
+
+.stat__icon:hover i {
+    color:var(--color-blue);
+    transform: rotate(20deg) scale(1.1);
+}
+
+.stat__icon {
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 60px;
+    color: var(--color-light-blue);
+    margin: auto;
+    border: 2px solid var(--color-light-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.profile__career {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 50px;
+}
+
+.job__period {
+    color: var(--color-grey);
+    font-size: var(--font-micro);
 }
