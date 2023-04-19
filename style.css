@@ -69,6 +69,7 @@ h1 {
     font-weight: var(--weight-bold);
     color: var(--color-blue);
     margin: 16px 0;
+    line-height: 180%;
 }
 
 h2 {
@@ -76,6 +77,7 @@ h2 {
     font-weight: var(--weight-semi-bold);
     color: var(--color-black);
     margin: 8px 0;
+    line-height: 180%;
 }
 
 h3 {
@@ -83,6 +85,7 @@ h3 {
     font-weight: var(--weight-semi-bold);
     color: var(--color-black);
     margin: 8px 0;
+    line-height: 180%;
 }
 
 p {
@@ -90,6 +93,7 @@ p {
     font-weight: var(--weight-regular);
     color: var(--color-black);
     margin: 5px 0;
+    line-height: 180%;
 }
 
 /* Navbar */
@@ -129,7 +133,6 @@ p {
 
 /* Home */
 #home {
-    background: url(imgs/home.jpg) center/cover no-repeat;
     padding: 50px;
     text-align: center;
 }
@@ -172,7 +175,7 @@ p {
 .about__stat {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px 0;
+    padding-top: 30px;
 }
 
 .stat_title {
@@ -394,11 +397,11 @@ p {
 /* Project */
 #Project {
     background: linear-gradient(#f5f5f5, #ffffff);
-    margin: 20px 20px;
 }
 
 .project__main {
-    padding-bottom: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* Contact */
