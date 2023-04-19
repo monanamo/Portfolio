@@ -394,8 +394,29 @@ p {
 /* Project */
 #Project {
     background: linear-gradient(#f5f5f5, #ffffff);
+    margin: 20px 20px;
 }
 
 .project__main {
     padding-bottom: 20px;
+}
+
+/* Contact */
+#Contact {
+    background-color: var(--color-dark-blue);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+    color: var(--color-white);
+}
+
+.contact__title {
+    margin: 30px;
+}
+
+.contact__rights {
+    font-size: var(--font-micro);
+    color: var(--color-light-blue);
 }
