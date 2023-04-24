@@ -185,7 +185,7 @@ p {
 }
 
 /* About */
-#About {
+#about {
     background-color: var(--color-light-white);
 }
 
@@ -417,7 +417,7 @@ p {
 }
 
 /* Project */
-#Project {
+#project {
     background: linear-gradient(#f5f5f5, #ffffff);
 }
 
@@ -430,7 +430,7 @@ p {
 }
 
 /* Contact */
-#Contact {
+#contact {
     background-color: var(--color-dark-blue);
 }
 
