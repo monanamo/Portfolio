@@ -98,12 +98,20 @@ p {
 
 /* Navbar */
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: var(--color-blue);
     align-items: center;
     color: var(--color-white);
     padding: 20px;
+    z-index:10;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+    background-color: var(--color-dark-blue);
 }
 
 .navbar__menu {
@@ -128,7 +136,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-dark-blue);
+    background-color: var(--color-light-blue);
 }
 
 .navbar__toggle-btn {
@@ -143,6 +151,7 @@ p {
 #home {
     padding: 50px;
     text-align: center;
+    padding-top: 100px;
 }
 
 .home__avatar {
