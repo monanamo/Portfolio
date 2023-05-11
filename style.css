@@ -118,6 +118,7 @@ p {
     display: flex;
 }
 
+
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-bold);
@@ -468,8 +469,8 @@ p {
     height: 50px;
     background-color: var(--color-blue);
     border-radius: 50%;
-    opacity: 0;
     pointer-events: none;
+    opacity: 0;
     transition: opacity 300ms ease-in;
 }
 
@@ -477,6 +478,7 @@ p {
     opacity: 1;
     pointer-events: auto;
 }
+
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
@@ -494,6 +496,10 @@ p {
         text-align: center;
         width: 100%;
         display: none;
+    }
+
+    .navbar__menu.open {
+        display: block;
     }
 
     .about__stat {
