@@ -170,6 +170,11 @@ p {
     border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+    background-color: var(--color-light-blue);
+    color: var(--color-white);
+}
+
 /* Section common */
 .section {
     padding: 50px;
@@ -433,7 +438,7 @@ p {
 
 .project__main {
     max-width: 1200px;
-    width: 400px;
+    width: 350px;
     display: flex;
     align-items: center;
     margin: auto;
